@@ -1,0 +1,193 @@
+/* banner导航栏 */
+.banner-nav{
+    width: 100%;
+    height: 94px;
+    position: relative;
+    /* background-color: red; */
+}
+/* banner导航栏容器 */
+.banner-nav-container{
+    width: 1000px;
+    height: 40px;
+    padding: 8px 0 7px;
+    /* background-color: #fff; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+/* banner导航栏左侧列表 */
+.banner-nav-list{
+    list-style: none;
+}
+/* banner导航栏左侧列表项目 */
+.banner-nav-item{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin-right: 4px;
+    border-radius: 6px;
+    transition: background-color .15s ease-in;
+}
+/* 文字 */
+.banner-nav-item>a{
+    padding: 0 18px;
+    color: rgba(0, 0, 0, .6);
+    font-weight: 700;
+    font-size: 15px;
+}
+/* 精选选项样式 */
+.cur-item{
+    background-color: rgba(0, 0, 0, .1);
+}
+.cur-item>a{
+    color: #3c3c3c;
+    position: relative;
+}
+/* banner导航栏左侧列表项目hover */
+.banner-nav-item:hover{
+    background-color: rgba(0, 0, 0, .1);
+}
+.banner-nav-item:hover a{
+    color: #3c3c3c;
+}
+/* 所有内容项目 */
+.all-items a{
+    padding: 0 28px 0 15px;
+    position: relative;
+}
+/* 所有内容箭头 */
+.banner-nav .all-items a::after{
+    content: "";
+    width: 11px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    margin-top: -3px;
+    transform: none;
+    border-radius: 0;
+    background-image: url(../img/2banner/arrow-all-item.svg);
+    opacity: .6;
+}
+/* 所有内容箭头 */
+.banner-nav .all-items:hover a::after{
+    opacity: 1;
+}
+/* 搜索框 */
+.banner-nav-search{
+    width: 180px;
+    float: right;
+    position: relative;
+}
+/* 搜索输入框容器 */
+.banner-nav-search-input-container{
+    height: 30px;
+    line-height: 30px;
+    border-radius: 6px;
+    padding-right: 48px;
+    overflow: hidden;
+    transition: background-color .2s ease-in;
+    color: #757575;
+    background-color: rgba(0,0,0,0.1);
+}
+/* 搜索输入框 */
+.banner-nav-search-input-container>input{
+    padding: 2px 5px 3px 15px;
+    font-size: 13px;
+    line-height: 18px;
+    height: 25px;
+    background-color: transparent;
+    cursor: text;
+    color: #3c3c3c;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    font-weight: 400;
+}
+/* 搜索按钮 */
+.search-submit{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 40px;
+    height: 30px;
+    margin-top: -15px;
+    cursor: pointer;
+}
+/* 搜索按钮-放大镜杆子 */
+.search-submit::before{
+    content: "";
+    width: 2px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #757575;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: 5px;
+    transform: rotate(135deg);
+}
+/* 搜索按钮-放大镜圆圈 */
+.search-submit::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #757575;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    margin-left: -6px;
+}
+/* 热搜部分 */
+.banner-nav-hot-search-container{
+    width: 340px;
+    height: 24px;
+    float: right;
+    padding: 5px 10px 0 0;
+    text-align: right;
+    font-size: 0;
+    /* overflow: hidden; */
+}
+/* 热搜链接 */
+.hot-search-link{
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 2px;
+    height: 19px;
+    line-height: 19px;
+    text-decoration: none;
+    position: relative;
+    padding: 0 12px;
+    max-width: 114px;
+    font-weight: 700;
+}
+/* 热搜链接hover */
+.hot-search-link:hover .hot-search-text{
+    color: #000;
+}
+/* 热搜分割线 */
+.hot-search-link:last-child::after{
+    content: "";
+    height: 12px;
+    margin-top: -6px;
+    position: absolute;
+    background: rgba(0, 0, 0, .1);
+    top: 50%;
+    width: 1px;
+    left: 0;
+}
+/* 热搜文字 */
+.hot-search-text{
+    font-size: 13px;
+    max-width: 78px;
+    vertical-align: middle;
+    display: inline-block;
+    color: rgba(0, 0, 0, .6);
+    transition: color .2s ease;
+}

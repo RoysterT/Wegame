@@ -1,0 +1,150 @@
+/* 折扣速递块 */
+.discount-express{
+    position: relative;
+    height: 364px;
+}
+/* 折扣速递内容区 */
+.discount-express-all-container{
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 18px;
+}
+/* 折扣速递标题区域 */
+.discount-express-title-container{
+    height: 70px;
+    line-height: 70px;
+    max-width: 820px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #3c3c3c;
+}
+/* 折扣速递内容区域 */
+.discount-express-content-all{
+    width: 960px;
+    height: 236px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+/* 折扣速递内容区域列表 */
+.discount-express-list{
+    margin: 0 -16px -16px 0;
+    list-style: none;
+}
+/* 折扣速递内容区域项目 */
+.discount-express-item-container{
+    position: relative;
+    cursor: pointer;
+    user-select: text;
+    width: 309.3px;
+    height: 236px;
+    float: left;
+    padding: 0 16px 16px 0;
+}
+/* 折扣速递内容区域项目图片容器 */
+.discount-express-item-img-box{
+    width: 306px;
+    height: 172px;
+    display: block;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #e4e4e4;
+}
+/* 折扣速递内容区域项目图片 */
+.discount-express-item-img{
+    width: 100%;
+    height: 100%;
+    transition: all .15s ease-out;
+}
+/* 折扣速递内容区域项目图片容器hover */
+.discount-express-item-img-box:hover .discount-express-item-img{
+    transform: scale(1.1);
+}
+/* 折扣速递内容区域项目文字容器 */
+.discount-express-item-text-container{
+    /* background-color: red; */
+}
+/* 折扣速递内容区域项目文字标题 */
+.discount-express-item-text-title{
+    margin: 12px 0 6px;
+    font-size: 16px;
+    line-height: 20px;
+    height: 22px;
+    font-weight: 700;
+    color: #3c3c3c;
+}
+/* 折扣速递内容区域项目文字价格内容区 */
+.discount-express-item-text-price-container{
+    min-height: 21px;
+}
+/* 折扣速递内容区域项目文字价格容器 */
+.discount-express-item-text-price-container{
+    border-radius: 4px;
+    min-width: 44px;
+    overflow: hidden;
+}
+/* 折扣速递内容区域项目文字价格折扣容器 */
+.discount-express-item-text-discount{
+    display: inline-block;
+    width: max-content;
+    align-items: center;
+    min-height: 21px;
+    left: -8px;
+    position: relative;
+    z-index: 2;
+    padding: 0 8px 0 14px;
+    color: #fff;
+    font-weight: 700;
+    -webkit-transform: skew(-8deg,0);
+    transform: skew(-8deg);
+}
+/* 折扣速递内容区域项目文字价格折扣文字 */
+.discount-express-item-text-discount-number{
+    position: relative;
+    top: -1px;
+    font-size: 14px;
+    -webkit-transform: skew(-8deg,0);
+    transform: skew(-8deg);
+}
+.discount-express-item-text-discount-unit{
+    position: relative;
+    top: -2px;
+    margin: -1px 0 0 -5px;
+    font-size: 15px;
+}
+/* 折扣速递内容区域项目文字价格折扣底色 */
+.discount-express-item-text-discount:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px 3px;
+    z-index: -1;
+    -webkit-transform: skew(-7deg,0);
+    transform: skew(-7deg);
+    background-image: linear-gradient(120deg,#FF7F1C 45%,#FFA200 90%);
+    background-repeat: no-repeat;
+}
+/* 折扣速递内容区域项目文字价格折扣价 */
+.discount-express-item-text-discount-newprice{
+    font-weight: 700;
+    color: #ff7f1c;
+    display: inline-block;
+}
+/* 折扣速递内容区域项目文字价格折扣价 */
+.discount-express-item-text-discount-oldprice{
+    position: relative;
+    left: -4px;
+    padding: 0 6px;
+    font-size: 15px;
+    color: #ff7f1c;
+    font-weight: 400;
+    opacity: .6;
+    display: inline-block;
+    margin-top: 2px;
+}

@@ -1,0 +1,217 @@
+/* 顶部栏主体 */
+.nav-body{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(30,30,32,.85);
+    backdrop-filter: blur(20px);
+    padding: 8px 0;
+    position: fixed;
+    font-family: Arial,verdana,"PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",sans-serif;
+    z-index: 10;
+}
+/* 顶部栏背景黑 */
+.nav-bg{
+    width: 100%;
+    height: 76px;
+    background-color: #1e1e20;
+}
+/* 顶部栏内容区 */
+.nav-content{
+    margin: 0 120px;
+    height: 100%;
+    /* background-color: red; */
+    min-width: 1166px;
+}
+/* logo区 */
+.nav-logo{
+    display: inline-block;
+    height: 50px;
+    padding: 10px 40px 0 0;
+    /* background-color: green; */
+    max-width: fit-content;
+}
+/* logo */
+.nav-logo img{
+    width: 152px;
+    height: 38px;
+    cursor: pointer;
+}
+/* 导航栏 */
+.nav-list{
+    display: inline-block;
+    position: absolute;
+    min-width: 702px;
+}
+/* 导航栏列表 */
+.nav-list ul{
+    list-style: none;
+}
+/* 导航栏选项 */
+.nav-item{
+    float: left;
+    width: fit-content;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 25px;
+    cursor: pointer;
+    /* background-color: green; */
+}
+/* 导航栏选项hover */
+.nav-item:hover a{
+    color: rgba(255, 255, 255, 1);
+}
+.nav-item:hover i{
+    border-color: rgba(255, 255, 255, 1);
+}
+/* 导航栏选项文字 */
+.nav-item a{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .8);
+    transition: all .2s ease;
+}
+/* 导航栏当前页面 */
+.nav-list .cur-page a{
+    color: white;
+}
+/* 导航栏当前页面提示条 */
+.nav-list .cur-page .cur-bar{
+    position: absolute;
+    left: 107px;
+    bottom: 10px;
+    width: 32px;
+    height: 3px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right,#ffe082,#ff6f00);;
+}
+/* 导航栏开发者平台箭头 */
+.nav-list .developer-arr{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, .8);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -8px;
+    border-top: none;
+    border-left: none;
+    transition: all .2s ease;
+}
+/* 导航栏开发者平台下拉菜单栏隐藏 */
+.drop-down-menu{
+    opacity: 0;
+    height: auto;
+    border-radius: 6px;
+    background-color: #fff;
+    width: 150px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(140%);
+    box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+    transition: opacity .25s ease;
+    pointer-events: none;
+}
+/* 导航栏开发者平台下拉菜单栏显示 */
+.nav-item-drop:hover .drop-down-menu{
+    opacity: 1;
+    pointer-events: all;
+}
+.nav-item-drop:hover li a{
+    color: #3c3c3c;
+}
+/* 导航栏开发者平台下拉菜单栏列表 */
+.drop-down-list{
+    padding: 6px;
+    line-height: 18px;
+    overflow: hidden;
+}
+/* 下拉菜单栏内容块 */
+.drop-menu-item{
+    height: 30px;
+    border-radius: 6px;
+    text-align: center;
+    transition: all .15s ease;
+}
+/* 下拉菜单栏内容块hover */
+.drop-menu-item:hover{
+    background-color: rgba(0,0,0,.1);
+}
+/* 下拉菜单栏文字 */
+.drop-menu-item a{
+    color: #3c3c3c;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Arial,verdana,"PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",sans-serif;
+}
+/* 导航栏应用区 */
+.nav-apps{
+    width: 254px;
+    height: 100%;
+    line-height: 100%;
+    float: right;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    /* background-color: blue; */
+}
+/* 导航栏应用区容器 */
+.nav-apps-container{
+    /* background-color: blue; */
+    height: 100%;
+}
+/* 导航栏下载客户端块 */
+.app-download{
+    float: left;
+    width: 113px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 18px;
+    text-align: center;
+    margin-top: 12px;
+}
+/* 导航栏下载客户端hover */
+.app-download:hover{
+    border-color: rgba(255, 255, 255, .2);
+    background-image: linear-gradient(to right,#ffe082,#ffaf4a);
+}
+.app-download:hover span{
+    color: #333;
+}
+/* 导航栏下载客户端文字 */
+.app-download a{
+    color: rgba(255, 255, 255, .8);
+    font-weight: 700;
+    font-size: 15px;
+}
+/* 导航栏应用区内容块 */
+.app-item{
+    display: inline-block;
+    margin-top: 18px;
+    margin-left: 21px;
+    height: 24px;
+}
+/* 导航栏应用区内容 */
+.app-item img{
+    opacity: .6;
+    transition: opacity .15s ease-in;
+}
+/* 导航栏应用区内容hover */
+.app-item img:hover{
+    opacity: 1;
+}
+/* 导航栏应用区登录块 */
+.login{
+    height: 24px;
+    margin: 0;
+    padding: 18px 0 18px 21px;
+    cursor: pointer;
+    align-items: center;
+    position: absolute;
+    /* background-color: green; */
+}

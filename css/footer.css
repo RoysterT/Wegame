@@ -1,0 +1,258 @@
+/* footer */
+.footer{
+    position: absolute;
+    /* bottom: 0; */
+    width: 100%;
+    height: max-content;
+    background-color: #1b1b1b;
+    color: white;
+    padding-bottom: 50px;
+    font-family: system-ui,"Open Sans",calibri,Roboto,verdana,"PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",sans-serif;
+}
+/* footer内容区 */
+.footer-wrapper{
+    width: 1000px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+/* footer上部内容 */
+.footer-wrapper-head{
+    
+}
+/* footer上部内容左侧文字区 */
+.footer-content{
+    height: max-content;
+}
+/* footer上部内容左侧文字块 */
+.footer-content-text{
+    display: block;
+    float: left;
+    margin-right: 50px;
+}
+/* footer上部内容左侧文字块标题 */
+.footer-content-title{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 16px;
+    cursor: default;
+}
+/* footer上部内容左侧文字块内容 */
+.footer-content-item{
+    position: relative;
+}
+/* footer上部内容左侧文字块内容项 */
+.footer-content-item-link{
+    min-width: 100px;
+    display: block;
+    margin: 0 10px 8px 0;
+    cursor: pointer;
+    position: relative;
+}
+/* footer上部内容左侧文字块内容hover */
+.footer-content-item-link:hover .footer-content-item-logo,
+.footer-content-item-link:hover .footer-content-item-text{
+    opacity: 1;
+}
+/* 微信hover时显示二维码 */
+.footer-content-item-link:hover .wechat-codes-container{
+    opacity: 1;
+    z-index: 10;
+    pointer-events: all;
+}
+/* footer上部内容左侧文字块内容项icon */
+.footer-content-item-logo{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .6;
+    position: relative;
+    top: -1px;
+}
+/* footer上部内容左侧文字块内容项文字 */
+.footer-content-item-text{
+    font-size: 14px;
+    color: #fff;
+    opacity: .6;
+    transition: opacity .2s ease-in;
+}
+/* icon-image */
+.footer-content-item-logo{
+    background: url(../img/7footer/icon.png) no-repeat -102px 0;
+    background-size: 160px 30px;
+    margin-right: 4px;
+    opacity: .6;
+    transition: opacity .2s ease-in;
+}
+/* icon */
+.icon-pc{
+    background-position: -102px 0;
+}
+.icon-mac{
+    background-position: -136px 0;
+}
+.icon-wechat{
+    background-position: -34px 0;
+}
+.icon-weibo{
+    background-position: 0 0;
+}
+.icon-bilibili{
+    background-position: -68px 0;
+}
+/* 微信二维码内容容器 */
+.wechat-codes-container{
+    width: max-content;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #fff;
+    position: absolute;
+    left: 100%;
+    top: -8px;
+    transition: opacity .2s ease-in;
+    font-size: 13px;
+    opacity: 0;
+    pointer-events: none;
+}
+/* 二维码区域左上角的箭头 */
+.wechat-codes-container::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 8px 6px 0;
+    border-color: transparent #fff transparent transparent;
+    position: absolute;
+    top: 16px;
+    left: -8px;
+}
+/* 二维码块 */
+.wechat-code-wrapper{
+    position: relative;
+    width: 120px;
+    height: 165px;
+    padding: 10px 12px 6px;
+    float: left;
+    text-align: center;
+    align-items: center;
+}
+/* 二维码分割线 */
+.wechat-left-code::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -2px;
+    bottom: 10px;
+    width: 1px;
+    background: rgba(0,0,0,.12);
+}
+/* 二维码 */
+.wechat-code{
+    width: 120px;
+    height: 120px;
+}
+/* 文字块 */
+.wechat-code-tips{
+    line-height: 1.5;
+    padding-bottom: 6px;
+    color: #3c3c3c;
+}
+/* 文字 */
+.wechat-code-tip{
+    display: block;
+    text-align: center;
+}
+/* 友情链接内容区 */
+.footer-content-item-a{
+    width: 200px;
+}
+/* 友情链接文字 */
+.footer-content-item-link-a{
+    min-width: 90px;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 10px 8px 0;
+    float: left;
+    color: #fff;
+    opacity: .6;
+    transition: opacity .2s ease-in;
+    position: relative;
+}
+/* 友情链接文字hover */
+.footer-content-item-link-a:hover{
+    opacity: 1;
+}
+/* 底部logo */
+.footer-content-logo{
+    width: 240px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+/* 底部版权区域 */
+.footer-wrapper-copyright{
+    width: 1000px;
+    float: left;
+    padding-top: 30px;
+    font-size: 12px;
+}
+/* 底部版权区域文字 */
+.copyright-text{
+    color: rgba(255, 255, 255, .4);
+}
+/* 链接区域 */
+.copyright-link{
+    display: block;
+    padding-bottom: 8px;
+    color: rgba(255, 255, 255, .4);
+}
+/* 链接 */
+.copyright-link-a{
+    display: inline-block;
+    position: relative;
+    left: -8px;
+    padding-left: 6px;
+    font-size: 12px;
+    transition: color .2s ease-in;
+}
+/* 链接hover */
+.copyright-link-a:hover{
+    color: rgba(255, 255, 255, .8);
+}
+/* 分割线 */
+.copyright-link-a::after{
+    content: "|";
+    color: #fff;
+    opacity: .4;
+    padding-left: 8px;
+    position: relative;
+    height: 10px;
+    transform: scaleY(.9);
+}
+/* 公安icon */
+.beian-icon{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 4px;
+}
+/* 公网安备 */
+.beian::after{
+    content: "";
+}
+/* 版权信息 */
+.copyright-info{
+    display: block;
+    padding-bottom: 8px;
+    color: rgba(255, 255, 255, .4);
+    cursor: default;
+}
+/* 版权所有 */
+.copyright-text:hover{
+    color: rgba(255, 255, 255, .8);
+}
